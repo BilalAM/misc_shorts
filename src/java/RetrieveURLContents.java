@@ -10,7 +10,7 @@ public class RetrieveURLContents {
 	public static void main(String[] args) throws IOException {
 		URL url = new URL("http://www.google.com");
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-	  conn.setRequestProperty("Cookie", "");
+	    	conn.setRequestProperty("Cookie", "");
 		conn.addRequestProperty("Accept-Language", "en-US,en;q=0.8");
 		conn.addRequestProperty("User-Agent", "");
 		conn.addRequestProperty("Referer", "");
